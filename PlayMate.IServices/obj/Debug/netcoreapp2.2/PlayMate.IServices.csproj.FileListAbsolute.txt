@@ -1,0 +1,14 @@
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.IServices.deps.json
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.IServices.dll
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.IServices.pdb
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.Common.dll
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.Model.dll
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.Model.pdb
+E:\Core\PlayMate\PlayMate.IServices\bin\Debug\netcoreapp2.2\PlayMate.Common.pdb
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.csprojAssemblyReference.cache
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.csproj.CoreCompileInputs.cache
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.AssemblyInfoInputs.cache
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.AssemblyInfo.cs
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.csproj.CopyComplete
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.dll
+E:\Core\PlayMate\PlayMate.IServices\obj\Debug\netcoreapp2.2\PlayMate.IServices.pdb

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayMate", "PlayMate\PlayMate.csproj", "{812949DB-17E7-4FAC-9D4D-246DD6D4019B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate.Model", "PlayMate.Model\PlayMate.Model.csproj", "{A8E6EF05-9316-4B90-9DD3-68493A7B64DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate.Common", "PlayMate.Common\PlayMate.Common.csproj", "{56D1D43A-AF70-411E-B7A7-C4554149505E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate.IServices", "PlayMate.IServices\PlayMate.IServices.csproj", "{A3F199B4-FBF1-4B82-AD0E-5AA74833AED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate.Services", "PlayMate.Services\PlayMate.Services.csproj", "{B7C9946B-9116-4222-ADA2-BF92DB929532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate.IRepository", "PlayMate.IRepository\PlayMate.IRepository.csproj", "{028B69B0-A9F4-46ED-9BDE-EB618509B843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate.Repository", "PlayMate.Repository\PlayMate.Repository.csproj", "{452310AC-7605-4BE3-B676-9C0322724184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{812949DB-17E7-4FAC-9D4D-246DD6D4019B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812949DB-17E7-4FAC-9D4D-246DD6D4019B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812949DB-17E7-4FAC-9D4D-246DD6D4019B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812949DB-17E7-4FAC-9D4D-246DD6D4019B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E6EF05-9316-4B90-9DD3-68493A7B64DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E6EF05-9316-4B90-9DD3-68493A7B64DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E6EF05-9316-4B90-9DD3-68493A7B64DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E6EF05-9316-4B90-9DD3-68493A7B64DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D1D43A-AF70-411E-B7A7-C4554149505E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D1D43A-AF70-411E-B7A7-C4554149505E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D1D43A-AF70-411E-B7A7-C4554149505E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D1D43A-AF70-411E-B7A7-C4554149505E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F199B4-FBF1-4B82-AD0E-5AA74833AED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F199B4-FBF1-4B82-AD0E-5AA74833AED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F199B4-FBF1-4B82-AD0E-5AA74833AED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F199B4-FBF1-4B82-AD0E-5AA74833AED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C9946B-9116-4222-ADA2-BF92DB929532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C9946B-9116-4222-ADA2-BF92DB929532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C9946B-9116-4222-ADA2-BF92DB929532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C9946B-9116-4222-ADA2-BF92DB929532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028B69B0-A9F4-46ED-9BDE-EB618509B843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028B69B0-A9F4-46ED-9BDE-EB618509B843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028B69B0-A9F4-46ED-9BDE-EB618509B843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028B69B0-A9F4-46ED-9BDE-EB618509B843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452310AC-7605-4BE3-B676-9C0322724184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452310AC-7605-4BE3-B676-9C0322724184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452310AC-7605-4BE3-B676-9C0322724184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452310AC-7605-4BE3-B676-9C0322724184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1535EBCD-437A-4418-A1D7-DF2C042DC2BA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\PlayMate.deps.json
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\PlayMate.runtimeconfig.json
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\PlayMate.runtimeconfig.dev.json
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\PlayMate.dll
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\PlayMate.pdb
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.csprojAssemblyReference.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.csproj.CoreCompileInputs.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.RazorAssemblyInfo.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.RazorAssemblyInfo.cs
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.AssemblyInfoInputs.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.AssemblyInfo.cs
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.RazorTargetAssemblyInfo.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.dll
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\PlayMate.pdb
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\Dockerfile

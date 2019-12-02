@@ -1,0 +1,12 @@
+E:\Core\PlayMate\PlayMate.Model\bin\Debug\netcoreapp2.2\PlayMate.Model.deps.json
+E:\Core\PlayMate\PlayMate.Model\bin\Debug\netcoreapp2.2\PlayMate.Model.dll
+E:\Core\PlayMate\PlayMate.Model\bin\Debug\netcoreapp2.2\PlayMate.Model.pdb
+E:\Core\PlayMate\PlayMate.Model\bin\Debug\netcoreapp2.2\PlayMate.Common.dll
+E:\Core\PlayMate\PlayMate.Model\bin\Debug\netcoreapp2.2\PlayMate.Common.pdb
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.csprojAssemblyReference.cache
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.csproj.CoreCompileInputs.cache
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.AssemblyInfoInputs.cache
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.AssemblyInfo.cs
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.csproj.CopyComplete
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.dll
+E:\Core\PlayMate\PlayMate.Model\obj\Debug\netcoreapp2.2\PlayMate.Model.pdb

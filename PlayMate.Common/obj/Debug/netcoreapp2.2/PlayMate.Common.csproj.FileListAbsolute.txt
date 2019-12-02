@@ -1,0 +1,9 @@
+E:\Core\PlayMate\PlayMate.Common\bin\Debug\netcoreapp2.2\PlayMate.Common.deps.json
+E:\Core\PlayMate\PlayMate.Common\bin\Debug\netcoreapp2.2\PlayMate.Common.dll
+E:\Core\PlayMate\PlayMate.Common\bin\Debug\netcoreapp2.2\PlayMate.Common.pdb
+E:\Core\PlayMate\PlayMate.Common\obj\Debug\netcoreapp2.2\PlayMate.Common.csproj.CoreCompileInputs.cache
+E:\Core\PlayMate\PlayMate.Common\obj\Debug\netcoreapp2.2\PlayMate.Common.AssemblyInfoInputs.cache
+E:\Core\PlayMate\PlayMate.Common\obj\Debug\netcoreapp2.2\PlayMate.Common.AssemblyInfo.cs
+E:\Core\PlayMate\PlayMate.Common\obj\Debug\netcoreapp2.2\PlayMate.Common.dll
+E:\Core\PlayMate\PlayMate.Common\obj\Debug\netcoreapp2.2\PlayMate.Common.pdb
+E:\Core\PlayMate\PlayMate.Common\obj\Debug\netcoreapp2.2\PlayMate.Common.csprojAssemblyReference.cache

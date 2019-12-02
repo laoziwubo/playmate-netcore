@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PlayMate</name>
+    </assembly>
+    <members>
+        <member name="M:PlayMate.Auth.JwtHelper.IssueJwt(PlayMate.Auth.JwtModel)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlayMate.Auth.JwtHelper.SerializeJwt(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PlayMate.Auth.JwtModel">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:PlayMate.Auth.JwtModel.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:PlayMate.Auth.JwtModel.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:PlayMate.Auth.JwtModel.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="T:PlayMate.Controllers.RecordController">
+            <summary>
+            记录管理
+            </summary>
+        </member>
+        <member name="M:PlayMate.Controllers.RecordController.Get(System.String,System.String)">
+            <summary>
+            仓储取值
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlayMate.Controllers.RecordController.Get">
+            <summary>
+            获取列表，需要Admin权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PlayMate.Middlewares.JwtMidd.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

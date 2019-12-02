@@ -1,0 +1,16 @@
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\PlayMate
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\PlayMate.deps.json
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\PlayMate.runtimeconfig.json
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\PlayMate.runtimeconfig.dev.json
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\PlayMate.dll
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\PlayMate.pdb
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.csprojAssemblyReference.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.csproj.CoreCompileInputs.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.RazorAssemblyInfo.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.RazorAssemblyInfo.cs
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.AssemblyInfoInputs.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.AssemblyInfo.cs
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.RazorTargetAssemblyInfo.cache
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.dll
+E:\Core\PlayMate\PlayMate\obj\Release\netcoreapp2.2\linux-x64\PlayMate.pdb
+E:\Core\PlayMate\PlayMate\bin\Release\netcoreapp2.2\linux-x64\Dockerfile

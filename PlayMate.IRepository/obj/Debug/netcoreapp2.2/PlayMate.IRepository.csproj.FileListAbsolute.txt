@@ -1,0 +1,14 @@
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.IRepository.deps.json
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.IRepository.dll
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.IRepository.pdb
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.Common.dll
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.Model.dll
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.Model.pdb
+E:\Core\PlayMate\PlayMate.IRepository\bin\Debug\netcoreapp2.2\PlayMate.Common.pdb
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.csprojAssemblyReference.cache
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.csproj.CoreCompileInputs.cache
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.AssemblyInfoInputs.cache
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.AssemblyInfo.cs
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.csproj.CopyComplete
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.dll
+E:\Core\PlayMate\PlayMate.IRepository\obj\Debug\netcoreapp2.2\PlayMate.IRepository.pdb
