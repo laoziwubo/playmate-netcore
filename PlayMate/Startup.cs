@@ -78,7 +78,7 @@ namespace PlayMate
                 });
             });
 
-            var audienceConfig = Configuration.GetSection("Audience");
+            var audienceConfig = Configuration.GetSection("JWT");
             var symmetricKeyAsBase64 = audienceConfig["Secret"];
             var keyByteArray = Encoding.ASCII.GetBytes(symmetricKeyAsBase64);
             var signingKey = new SymmetricSecurityKey(keyByteArray);
@@ -147,13 +147,13 @@ namespace PlayMate
             //Autofac容器注入的内容
             var builder = new ContainerBuilder();
 
-            builder.RegisterType<CacheAop>();
-            builder.RegisterType<RedisAop>();
-            builder.RegisterType<LogAop>();
+            //builder.RegisterType<CacheAop>();
+            //builder.RegisterType<RedisAop>();
+            //builder.RegisterType<LogAop>();
 
             var servicesAssembly = Path.Combine(basePath, "PlayMate.Services.dll");
-            builder.RegisterAssemblyTypes(Assembly.LoadFile(servicesAssembly)).AsImplementedInterfaces()
-                .EnableInterfaceInterceptors().InterceptedBy(typeof(RedisAop));
+            builder.RegisterAssemblyTypes(Assembly.LoadFile(servicesAssembly)).AsImplementedInterfaces();
+                //.EnableInterfaceInterceptors().InterceptedBy(typeof(RedisAop));
 
             var repositoryAssembly = Path.Combine(basePath, "PlayMate.Repository.dll");
             builder.RegisterAssemblyTypes(Assembly.LoadFrom(repositoryAssembly)).AsImplementedInterfaces();

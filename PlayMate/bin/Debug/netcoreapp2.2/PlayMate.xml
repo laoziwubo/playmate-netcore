@@ -8,7 +8,7 @@
             <summary>
             颁发JWT字符串
             </summary>
-            <param name="tokenModel"></param>
+            <param name="jwtModel"></param>
             <returns></returns>
         </member>
         <member name="M:PlayMate.Auth.JwtHelper.SerializeJwt(System.String)">
@@ -21,21 +21,6 @@
         <member name="T:PlayMate.Auth.JwtModel">
             <summary>
             令牌
-            </summary>
-        </member>
-        <member name="P:PlayMate.Auth.JwtModel.Uid">
-            <summary>
-            Id
-            </summary>
-        </member>
-        <member name="P:PlayMate.Auth.JwtModel.Role">
-            <summary>
-            角色
-            </summary>
-        </member>
-        <member name="P:PlayMate.Auth.JwtModel.Work">
-            <summary>
-            职能
             </summary>
         </member>
         <member name="T:PlayMate.Controllers.RecordController">

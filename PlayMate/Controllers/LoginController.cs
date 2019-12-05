@@ -8,6 +8,7 @@ using PlayMate.Auth;
 using PlayMate.Common.Attribute;
 using PlayMate.Common.Cache;
 using PlayMate.Model.Common;
+using PlayMate.Model.User;
 
 namespace PlayMate.Controllers
 {
@@ -21,28 +22,38 @@ namespace PlayMate.Controllers
             _redis = redis;
         }
 
-        [Route("jwt")]
-        [HttpGet]
-        public async Task<object> GetJwt(string name, string pass)
+        [HttpPost]
+        public object Post([FromBody]JwtModel model)
         {
-            var tokenModel = new JwtModel { Uid = 10086, Role = "Admin" };
-            if (_redis.Get(tokenModel.Uid.ToString()))
+            if (model.Name == "admin" && model.Pwd == "admin")
+            {
+                model.Role = "Admin";
+                if (_redis.Get(model.CacheKey))
+                {
+                    return Ok(new JsonModel<string>
+                    {
+                        Code = 1,
+                        Msg = "登陆成功！",
+                        Payload = _redis.Get<string>(model.CacheKey)
+                    });
+                }
+                var token = JwtHelper.IssueJwt(model);
+                _redis.Set(model.CacheKey, token, TimeSpan.FromHours(2));
+                return Ok(new JsonModel<string>
+                {
+                    Code = 1,
+                    Msg = "登陆成功",
+                    Payload = token
+                });
+            }
+            else
             {
                 return Ok(new JsonModel()
                 {
-                    Code = 1,
-                    Msg = "",
-                    Payload = _redis.GetValue(tokenModel.Uid.ToString())
+                    Code = 0,
+                    Msg = "用户名密码错误！"
                 });
             }
-            var token = await Task.Run(() => JwtHelper.IssueJwt(tokenModel));
-            _redis.Set(tokenModel.Uid.ToString(), token, TimeSpan.FromSeconds(600));
-            return Ok(new JsonModel()
-            {
-                Code = 1,
-                Msg = "",
-                Payload = token
-            });
         }
     }
 }

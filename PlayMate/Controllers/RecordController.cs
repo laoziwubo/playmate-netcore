@@ -4,6 +4,7 @@ using PlayMate.IServices;
 using PlayMate.Model.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using PlayMate.Model.Record;
 
 namespace PlayMate.Controllers
 {
@@ -30,9 +31,10 @@ namespace PlayMate.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("GetRecordForTest")]
+        [Authorize(Roles = "Admin")]
         public async Task<object> Get(string a, string b)
         {
-            return Ok(new JsonModel()
+            return Ok(new JsonModel<RecordDto>
             {
                 Code = 1,
                 Msg = "yes",

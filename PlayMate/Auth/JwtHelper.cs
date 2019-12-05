@@ -15,25 +15,24 @@ namespace PlayMate.Auth
         /// <summary>
         /// 颁发JWT字符串
         /// </summary>
-        /// <param name="tokenModel"></param>
+        /// <param name="jwtModel"></param>
         /// <returns></returns>
-        public static string IssueJwt(JwtModel tokenModel)
+        public static string IssueJwt(JwtModel jwtModel)
         {
-            string iss = AppSettingsHelper.Config("Audience", "Issuer");
-            string aud = AppSettingsHelper.Config("Audience", "Audience");
-            string secret = AppSettingsHelper.Config("Audience", "Secret");
+            string iss = AppSettingsHelper.Config("JWT", "Issuer");
+            string aud = AppSettingsHelper.Config("JWT", "Audience");
+            string secret = AppSettingsHelper.Config("JWT", "Secret");
 
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.Jti, tokenModel.Uid.ToString()),
+                new Claim(JwtRegisteredClaimNames.Jti, jwtModel.CacheKey),
                 new Claim(JwtRegisteredClaimNames.Iat, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}"),
-                new Claim(JwtRegisteredClaimNames.Nbf,$"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}") ,
-                //这个就是过期时间，目前是过期1000秒，可自定义，注意JWT有自己的缓冲过期时间
-                new Claim (JwtRegisteredClaimNames.Exp,$"{new DateTimeOffset(DateTime.Now.AddSeconds(1000)).ToUnixTimeSeconds()}"),
+                new Claim(JwtRegisteredClaimNames.Nbf, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}") ,
+                new Claim (JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddHours(2)).ToUnixTimeSeconds()}"),
                 new Claim(JwtRegisteredClaimNames.Iss,iss),
                 new Claim(JwtRegisteredClaimNames.Aud,aud)
             };
-            claims.AddRange(tokenModel.Role.Split(',').Select(s => new Claim(ClaimTypes.Role, s)));
+            claims.AddRange(jwtModel.Role.Split(',').Select(s => new Claim(ClaimTypes.Role, s)));
 
             //秘钥 (SymmetricSecurityKey 对安全性的要求，密钥的长度太短会报出异常)
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
@@ -44,9 +43,7 @@ namespace PlayMate.Auth
                 claims: claims,
                 signingCredentials: creds);
 
-            var jwtHandler = new JwtSecurityTokenHandler();
-            var encodedJwt = jwtHandler.WriteToken(jwt);
-            return encodedJwt;
+            return new JwtSecurityTokenHandler().WriteToken(jwt);
         }
 
         /// <summary>
@@ -56,8 +53,7 @@ namespace PlayMate.Auth
         /// <returns></returns>
         public static JwtModel SerializeJwt(string jwtStr)
         {
-            var jwtHandler = new JwtSecurityTokenHandler();
-            JwtSecurityToken jwtToken = jwtHandler.ReadJwtToken(jwtStr);
+            var jwtToken = new JwtSecurityTokenHandler().ReadJwtToken(jwtStr);
             object role;
             try
             {
@@ -68,12 +64,10 @@ namespace PlayMate.Auth
                 Console.WriteLine(e);
                 throw;
             }
-            var tm = new JwtModel
+            return new JwtModel
             {
-                Uid = Convert.ToInt64(jwtToken.Id),
                 Role = role != null ? role as string : "",
             };
-            return tm;
         }
     }
 
@@ -82,17 +76,12 @@ namespace PlayMate.Auth
     /// </summary>
     public class JwtModel
     {
-        /// <summary>
-        /// Id
-        /// </summary>
-        public long Uid { get; set; }
-        /// <summary>
-        /// 角色
-        /// </summary>
         public string Role { get; set; }
-        /// <summary>
-        /// 职能
-        /// </summary>
-        public string Work { get; set; }
+        
+        public string Name { get; set; }
+        
+        public string Pwd { get; set; }
+
+        public string CacheKey => $"{Name.Trim()}::{Pwd.Trim()}";
     }
 }
